@@ -4,17 +4,17 @@
 class Curves3D
 {
 public:
-	struct Point3D { double x{}, y{}, z{}; };	// точка в 3-х мерном пространстве
+	struct Point3D { double x{}, y{}, z{}; };	// С‚РѕС‡РєР° РІ 3-С… РјРµСЂРЅРѕРј РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРµ 
 
 	friend std::ostream& operator<<(std::ostream& os, const Point3D& p)
-	{	// выводим точку в поток
+	{	
 		return os << "P{ " << p.x << ", " << p.y << ", " << p.z << " }";
 	}
 	//===============================================================>
-	struct Vector3D { double x{}, y{}, z{}; };	// вектор в 3-х мерном пространстве
+	struct Vector3D { double x{}, y{}, z{}; };	// РІРµРєС‚РѕСЂ РІ 3-С… РјРµСЂРЅРѕРј РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРµ
 
 	friend std::ostream& operator<<(std::ostream& os, const Vector3D& v)
-	{	// выводим вектор в поток
+	{	
 		return os << "V{ " << v.x << ", " << v.y << ", " << v.z << " }";
 	}
 protected:
