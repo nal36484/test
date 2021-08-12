@@ -9,14 +9,14 @@
 
 
 constexpr double eps = 1e-6;
-using PCurves = std::shared_ptr<Curves3D>; // псевдоним типа - умный указатель на базовый класс
+using PCurves = std::shared_ptr<Curves3D>; // РїСЃРµРІРґРѕРЅРёРј С‚РёРїР° - СѓРјРЅС‹Р№ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° Р±Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ
 
 class Curves_generator
 {
 	enum curves_t{ circles_t, ellipses_t, helixes_t };
 	static std::random_device rd;
-	std::uniform_real_distribution<double> udd{ -1, 1 };    // генератор случайных вещественных чисел(ГСВЧ)
-	std::uniform_int_distribution<> usd{ circles_t, helixes_t };   // генератор случайных типов объектов
+	std::uniform_real_distribution<double> udd{ -1, 1 };    // РіРµРЅРµСЂР°С‚РѕСЂ СЃР»СѓС‡Р°Р№РЅС‹С… РІРµС‰РµСЃС‚РІРµРЅРЅС‹С… С‡РёСЃРµР»(Р“РЎР’Р§)
+	std::uniform_int_distribution<> usd{ circles_t, helixes_t };   // РіРµРЅРµСЂР°С‚РѕСЂ СЃР»СѓС‡Р°Р№РЅС‹С… С‚РёРїРѕРІ РѕР±СЉРµРєС‚РѕРІ
 public:
 	//Curves_generator();
 	//~Curves_generator();
