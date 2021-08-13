@@ -9,8 +9,8 @@ Curves3D::Point3D Helixes3D::curve_point(double t) const
 {
     return Point3D
     {
-        rad * t * std::cos(t) + c.x,
-        rad * t * std::sin(t) + c.y,
+        rad * std::cos(t) + c.x,
+        rad * std::sin(t) + c.y,
         step * t + c.z
     };
 }
